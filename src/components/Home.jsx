@@ -3,16 +3,23 @@ import { Title } from './commons/Title'
 import { Search } from './Search'
 import { Weather } from './Weather'
 
+/**
+ * Accueil de l'application
+ */
 export const Home = () => {
 
     const [city, setCity] = useState("");
 
+    /**
+     * Methode qui gere la reception des donnees du formulaire
+     * @param {ref} inputRef 
+     */
     const handleSubmit = (inputRef) => {
         setCity(inputRef.current.value);
     }
 
     useEffect(() => {
-        console.log(city);
+        
     }, [city])
 
     return (

@@ -8,7 +8,7 @@ export class FetchConfig {
     constructor(){
 
         this.url =  'http://api.openweathermap.org/data/2.5/weather';
-        this.apiKey =  '159859d9cfd62dd5de367520e28d8d71';
+        this.apiKey =  '************';
         this.HTTpHeaders =  new Headers();
         this.init = {
             method: 'GET',
